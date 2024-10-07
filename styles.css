@@ -666,7 +666,7 @@ progress {
     max-width: 720px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
@@ -1333,7 +1333,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -3422,7 +3422,7 @@ textarea.form-control-lg {
     left: auto /* rtl:ignore */;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .dropdown-menu-lg-start {
     --bs-position: start;
   }
@@ -3969,7 +3969,7 @@ textarea.form-control-lg {
     display: none;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4834,7 +4834,7 @@ textarea.form-control-lg {
     border-left-width: 1px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
@@ -5252,7 +5252,7 @@ textarea.form-control-lg {
     max-width: 300px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .modal-lg,
 .modal-xl {
     max-width: 800px;
@@ -5614,6 +5614,9 @@ textarea.form-control-lg {
   border-bottom: 1px solid #d8d8d8;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
+}
+.popover-header:empty {
+  display:;
 }
 
 .popover-body {
@@ -6111,7 +6114,7 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .sticky-lg-top {
     position: sticky;
     top: 0;
@@ -8708,7 +8711,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 400px) {
   .float-lg-start {
     float: left !important;
   }
@@ -10729,9 +10732,7 @@ body {
   height: 100%;
 }
 
-.page-section {
-  padding: 8rem 0;
-}
+
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
@@ -10781,7 +10782,7 @@ hr.divider-light {
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #f4623a !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 200px) {
   #mainNav {
     box-shadow: none;
     background-color: transparent;
@@ -10822,7 +10823,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10831,10 +10832,10 @@ header.masthead {
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 200px) {
   header.masthead {
     height: 90vh;
-    min-height: 40rem;
+    min-height: 412px;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
@@ -10845,7 +10846,7 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
