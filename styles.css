@@ -5615,9 +5615,6 @@ textarea.form-control-lg {
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
-.popover-header:empty {
-  display: none;
-}
 
 .popover-body {
   padding: 1rem 1rem;
