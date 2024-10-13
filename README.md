@@ -1,1 +1,0 @@
-# kokoava_tehtava

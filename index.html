@@ -1,98 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Kokoava tehtävä</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
-        <style>
-            body {
-                background-color: #343a40;
-                color: white;
-                font-family: Arial, sans-serif;
-                
-                transform-origin: top left;
-            }input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 21px;
-            background-color: #4e4caf;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }.weatherContainer {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .weatherItem {
-            display: flex; /* Käytetään flexboxia laatikoissa */
-            border: 1px solid #131010;
-            background-color: rgb(69, 179, 59);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 5px 8px rgba(95, 80, 80, 0.1);
-        }
-        .imageContainer {
-            margin-right: 30px;
-        }
-        .imageContainer img {
-            max-width: 500px; /* Säädetään kuvan maksimileveys */
-            border-radius: 5px; /* Kulmat pyöristetään */
-        }
-        .weatherInfo {
-            flex: 1; /* Täyttää jäljelle jäävän tilan */
-            text-align: left; /* Vasemmalle perustuva teksti */
-        }
-            
-        </style>
-    </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Matkailun iloa</title>
+  <meta content="" name="Tämä sivusto keskittyy lippuvisan pelailuun, jossa seikkaillaan ympäri maailmaa kuvien avulla ja paetaan syksyn pimeyttä ja sadetta">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
 
-    <body id="page-top">
-        <!-- Navigaatio-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Matkakärpänen</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#masthead">Synkkä syksy</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#lippuvisa">Lippuvisa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sää">Sääennuste</a></li>
-                    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead" id="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Joko sinulla on matkakuumetta näin syksyn sateiden ja kylmien ilmojen aikoina?</p></p>Jos vastasit ei, niin kohta voi olla</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Pelaa lippuvisaa ja kun kiva kohde löytyy, niin voit tarkistaa samalla sen maan säätiedot</p>
-                        <a class="btn btn-primary btn-xl" href="#lippuvisa">PELAA TÄSTÄ</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        
-        <!-- Lippuvisa-osio -->
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/hero-logo.png" alt=""></a>
+      <a href="index.html" class="sääkuva" data-aos="zoom-in"><img src="sade.jpg" alt=""></a> <p>
+
+
+
+      </p>
+      <h1 data-aos="zoom-in">Joko synkkä sää ja sade riittää?</h1>
+      <h2 data-aos="fade-up">Pelaa lippupeliä ja lähde matkalle ympäri maailman</h2>
+      <a data-aos="fade-up" data-aos-delay="200" href="#lippuvisa" class="btn-get-started scrollto">Pelaa tästä</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">ALKU</a></li>
+          <li><a class="nav-link scrollto" href="#lippuvisa">lippuvisa</a></li>
+          <li><a class="nav-link scrollto" href="#footer">SÄÄTIEDOT</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
     <section class="custom-style" id="lippuvisa">
         <div class="container">
             <h1 class="my-4 text-center">Arvaa maan lippu!</h1>
@@ -154,188 +131,7 @@
             "Spain": "Espanja",
             "Japan": "Japani",
             "United States": "Yhdysvallat",
-            "Canada": "Kanada",
-            "Afghanistan": "Afganistan",
-            "Albania": "Albania",
-            "Algeria": "Algeria",
-            "Andorra": "Andorra",
-            "Angola": "Angola",
-            "Antigua and Barbuda": "Antigua ja Barbuda",
-            "Argentina": "Argentiina",
-            "Armenia": "Armenia",
-            "Australia": "Australia",
-            "Austria": "Itävalta",
-            "Azerbaijan": "Azerbaidžan",
-            "Bahamas": "Bahama",
-            "Bahrain": "Bahrain",
-            "Bangladesh": "Bangladesh",
-            "Barbados": "Barbados",
-            "Belarus": "Valko-Venäjä",
-            "Belgium": "Belgia",
-            "Belize": "Belize",
-            "Benin": "Benin",
-            "Bhutan": "Bhutan",
-            "Bolivia": "Bolivia",
-            "Bosnia and Herzegovina": "Bosnia ja Hertsegovina",
-            "Botswana": "Botswana",
-            "Brazil": "Brasilia",
-            "Brunei": "Brunei",
-            "Bulgaria": "Bulgaria",
-            "Burkina Faso": "Burkina Faso",
-            "Burundi": "Burundi",
-            "Cabo Verde": "Kap Verde",
-            "Cambodia": "Kambodža",
-            "Cameroon": "Kamerun",
-            "Central African Republic": "Keski-Afrikan tasavalta",
-            "Chad": "Tšad",
-            "Chile": "Chile",
-            "China": "Kiina",
-            "Colombia": "Kolumbia",
-            "Comoros": "Komorit",
-            "Congo (Congo-Brazzaville)": "Kongon tasavalta",
-            "Congo (Congo-Kinshasa)": "Kongon demokraattinen tasavalta",
-            "Costa Rica": "Costa Rica",
-            "Croatia": "Kroatia",
-            "Cuba": "Kuuba",
-            "Cyprus": "Kypros",
-            "Czech Republic (Czechia)": "Tšekki",
-            "Djibouti": "Djibouti",
-            "Dominica": "Dominica",
-            "Dominican Republic": "Dominikaaninen tasavalta",
-            "Ecuador": "Ecuador",
-            "Egypt": "Egypti",
-            "El Salvador": "El Salvador",
-            "Equatorial Guinea": "Päiväntasaajan Guinea",
-            "Eritrea": "Eritrea",
-            "Estonia": "Viro",
-            "Eswatini": "Eswatini (Swazimaa)",
-            "Ethiopia": "Etiopia",
-            "Fiji": "Fidži",
-            "Gabon": "Gabon",
-            "Gambia": "Gambia",
-            "Georgia": "Georgia",
-            "Ghana": "Ghana",
-            "Greece": "Kreikka",
-            "Grenada": "Grenada",
-            "Guatemala": "Guatemala",
-            "Guinea": "Guinea",
-            "Guinea-Bissau": "Guinea-Bissau",
-            "Guyana": "Guyana",
-            "Haiti": "Haiti",
-            "Honduras": "Honduras",
-            "Hungary": "Unkari",
-            "Iceland": "Islanti",
-            "India": "Intia",
-            "Indonesia": "Indonesia",
-            "Iran": "Iran",
-            "Iraq": "Irak",
-            "Ireland": "Irlanti",
-            "Israel": "Israel",
-            "Jamaica": "Jamaika",
-            "Jordan": "Jordania",
-            "Kazakhstan": "Kazakstan",
-            "Kenya": "Kenia",
-            "Kiribati": "Kiribati",
-            "Kuwait": "Kuwait",
-            "Kyrgyzstan": "Kirgisia",
-            "Laos": "Laos",
-            "Latvia": "Latvia",
-            "Lebanon": "Libanon",
-            "Lesotho": "Lesotho",
-            "Liberia": "Liberia",
-            "Libya": "Libya",
-            "Liechtenstein": "Liechtenstein",
-            "Lithuania": "Liettua",
-            "Luxembourg": "Luxemburg",
-            "Madagascar": "Madagaskar",
-            "Malawi": "Malawi",
-            "Malaysia": "Malesia",
-            "Maldives": "Malediivit",
-            "Mali": "Mali",
-            "Malta": "Malta",
-            "Marshall Islands": "Marshallinsaaret",
-            "Mauritania": "Mauritania",
-            "Mauritius": "Mauritius",
-            "Mexico": "Meksiko",
-            "Micronesia": "Mikronesia",
-            "Moldova": "Moldova",
-            "Monaco": "Monaco",
-            "Mongolia": "Mongolia",
-            "Montenegro": "Montenegro",
-            "Morocco": "Marokko",
-            "Mozambique": "Mosambik",
-            "Myanmar (Burma)": "Myanmar",
-            "Namibia": "Namibia",
-            "Nauru": "Nauru",
-            "Nepal": "Nepal",
-            "Netherlands": "Alankomaat",
-            "New Zealand": "Uusi-Seelanti",
-            "Nicaragua": "Nicaragua",
-            "Niger": "Niger",
-            "Nigeria": "Nigeria",
-            "North Korea": "Pohjois-Korea",
-            "North Macedonia": "Pohjois-Makedonia",
-            "Oman": "Oman",
-            "Pakistan": "Pakistan",
-            "Palau": "Palau",
-            "Panama": "Panama",
-            "Papua New Guinea": "Papua-Uusi-Guinea",
-            "Paraguay": "Paraguay",
-            "Peru": "Peru",
-            "Philippines": "Filippiinit",
-            "Poland": "Puola",
-            "Portugal": "Portugali",
-            "Qatar": "Qatar",
-            "Romania": "Romania",
-            "Russia": "Venäjä",
-            "Rwanda": "Ruanda",
-            "Saint Kitts and Nevis": "Saint Kitts ja Nevis",
-            "Saint Lucia": "Saint Lucia",
-            "Saint Vincent and the Grenadines": "Saint Vincent ja Grenadiinit",
-            "Samoa": "Samoa",
-            "San Marino": "San Marino",
-            "São Tomé and Príncipe": "São Tomé ja Príncipe",
-            "Saudi Arabia": "Saudi-Arabia",
-            "Senegal": "Senegal",
-            "Serbia": "Serbia",
-            "Seychelles": "Seychellit",
-            "Sierra Leone": "Sierra Leone",
-            "Singapore": "Singapore",
-            "Slovakia": "Slovakia",
-            "Slovenia": "Slovenia",
-            "Solomon Islands": "Salomonsaaret",
-            "Somalia": "Somalia",
-            "South Africa": "Etelä-Afrikka",
-            "South Korea": "Etelä-Korea",
-            "South Sudan": "Etelä-Sudan",
-            "Sri Lanka": "Sri Lanka",
-            "Sudan": "Sudan",
-            "Suriname": "Suriname",
-            "Syria": "Syyria",
-            "Tajikistan": "Tadžikistan",
-            "Tanzania": "Tansania",
-            "Thailand": "Thaimaa",
-            "Timor-Leste": "Itä-Timor",
-            "Togo": "Togo",
-            "Tonga": "Tonga",
-            "Trinidad and Tobago": "Trinidad ja Tobago",
-            "Tunisia": "Tunisia",
-            "Turkey": "Turkki",
-            "Turkmenistan": "Turkmenistan",
-            "Tuvalu": "Tuvalu",
-            "Uganda": "Uganda",
-            "Ukraine": "Ukraina",
-            "United Arab Emirates": "Arabiemiirikunnat",
-            "United Kingdom": "Yhdistynyt kuningaskunta",
-            "Uruguay": "Uruguay",
-            "Uzbekistan": "Uzbekistan",
-            "Vanuatu": "Vanuatu",
-            "Vatican City": "Vatikaani",
-            "Venezuela": "Venezuela",
-            "Vietnam": "Vietnam",
-            "Yemen": "Jemen",
-            "Zambia": "Sambia",
-            "Zimbabwe": "Zimbabwe"
+            "Canada": "Kanada"
         };
 
         fetch('https://restcountries.com/v3.1/all')
@@ -449,152 +245,261 @@
             });
         }
     </script>
+
         
-                    </div>
-                </div>
-            </div>
+        </section><!-- End About Us Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Muutamia vinkkejä matkailuun</h2>
         </div>
 
+        <ul class="faq-list">
+
+          <li data-aos="fade-up">
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Mistä voin vertailla halpoja lentoja eri kohteisiin? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                <a href="www.momondo.fi">Momondo</a> on hyvä sivusto, josta löydät halvat lennot eri kohteisiin. Sivusto vertailee eri lentoyhtiöiden hintoja ja näyttää sinulle parhaat vaihtoehdot. 
+                  Voit myös tilata hintavahtipalvelun, joka ilmoittaa sinulle sähköpostitse, kun lentolipun hinta laskee. 
+                </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="100">
+            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Mistä kautta hankin äkkilähdön?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                <a href="www.rantapallo.fi">Rantapallo</a> on hyvä sivusto, josta löydät äkkilähdöt ja halvat matkat. Sivusto vertailee eri matkatoimistojen hintoja ja näyttää sinulle parhaat vaihtoehdot. 
+                  Voit myös tilata hintavahtipalvelun, joka ilmoittaa sinulle sähköpostitse, kun matkan hinta laskee.
+                            </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">MItä ottaa huomioon matkalle lähtiessä <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                <a href="www.finavia.fi">Finavia</a> sivustolta löydät tietoa lentokentistä ja niiden palveluista. Sivusto kertoo myös, mitä ottaa huomioon matkalle lähtiessä ja miten toimia eri tilanteissa. 
+                  Sivusto kertoo myös, mitä saa ja ei saa ottaa mukaan lentokoneeseen ja miten toimia, jos matkatavarat katoavat.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Mihin maihin matkustaminen on turvallista? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                <a href="www.um.fi/uusimmat-matkustustiedotteet"> </a> Matkustustiedotteet sisältävät pitkän aikavälin tietoa maan tai alueen yleisestä turvallisuustilanteesta. Tieto on tarkoitettu matkustajan oman päätöksenteon tueksi.
+                Tiedotteita julkaistaan niistä maista, joissa Suomella on edustusto tai joista edustustot muuten pystyvät hankkimaan luotettavaa tietoa:
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <a href="#header" class="scrollto footer-logo"><img src="assets/img/hero-logo.png" alt=""></a>
+            <h3>Hae säätiedot kaupungille</h3>
+            <p>Kirjoita alle kaupungin nimi, niin saat vastauksena tämän hetkisen sään tiedot</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            
+          </div>
+        </div>
         <!-- Sää-->
 
         
         <section class="page-section bg-primary" id="sää">
-            <h1>Hae säätiedot kaupungille</h1>
-    <form id="weatherForm">
-        <input type="text" id="cityInput" placeholder="Kaupunki" required>
-        <input type="submit" value="Hae säätiedot">
-    </form>
+          <h1></h1>
+  <form id="weatherForm">
+      <input type="text" id="cityInput" placeholder="Kaupunki" required>
+      <input type="submit" value="Hae säätiedot">
+  </form>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #80785ffb;
-        }
-        h1 {
-            text-align: center;
-            color: #0a0909;
-        }
-        form {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-            width: 1200px;
-            align-content: center;
-            
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: hsla(46, 86%, 59%, 0.984);
+      }
+      h1 {
+          text-align: center;
+          color: #0c0a0a;
+      }
+      form {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      input[type="text"] {
+          padding: 10px;
+          font-size: 16px;
+          width: 1200px;
+          align-content: center;
+      }
           
         
-        
-        
-    </style>
+      
+      
+      
+  </style>
 
-    <div id="weatherContainer" class="weatherContainer"></div>
+  <div id="weatherContainer" class="weatherContainer"></div>
 
-    <script>
-        const apiKey = '314de1b8dabfbace7321a5ff474e27d1'; // Aseta oma OpenWeatherMap API-avain tähän
-        const unsplashAccessKey = 'kOtx4NsMYxC68f_HJIWSYP4cBTQoZeMzy2-aDFBLO2g'; // Aseta oma Unsplash API-avain tähän
+  <script>
+      const apiKey = '314de1b8dabfbace7321a5ff474e27d1'; // Aseta oma OpenWeatherMap API-avain tähän
+      const unsplashAccessKey = 'kOtx4NsMYxC68f_HJIWSYP4cBTQoZeMzy2-aDFBLO2g'; // Aseta oma Unsplash API-avain tähän
 
-        document.getElementById('weatherForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const city = document.getElementById('cityInput').value.trim();
-            fetchWeather(city);
-        });
+      document.getElementById('weatherForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const city = document.getElementById('cityInput').value.trim();
+          fetchWeather(city);
+      });
 
-        function fetchWeather(city) {
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=fi`;
+      function fetchWeather(city) {
+          const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=fi`;
 
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Tietoja ei löytynyt.');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const countryName = getCountryName(data.sys.country);
-                    displayWeather(data, countryName);
-                    fetchImage(data.name); // Hae kuva kaupungin mukaan
-                })
-                .catch(error => {
-                    document.getElementById("weatherContainer").innerHTML = 
-                    "<p>Tietoa ei pystytä hakemaan. Tarkista kaupunki ja yritä uudelleen.</p>";
-                });
-        }
+          fetch(url)
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('Tietoja ei löytynyt.');
+                  }
+                  return response.json();
+              })
+              .then(data => {
+                  const countryName = getCountryName(data.sys.country);
+                  displayWeather(data, countryName);
+                  fetchImage(data.name); // Hae kuva kaupungin mukaan
+              })
+              .catch(error => {
+                  document.getElementById("weatherContainer").innerHTML = 
+                  "<p>Tietoa ei pystytä hakemaan. Tarkista kaupunki ja yritä uudelleen.</p>";
+              });
+      }
 
-        function getCountryName(countryCode) {
-            const countryNames = {
-                "FI": "Suomi",
-                "SE": "Ruotsi",
-                "NO": "Norja",
-                "DE": "Saksa",
-                "FR": "Ranska",
-                "US": "Yhdysvallat",
-                "GB": "Iso-Britannia",
-                "JP": "Japani",
-                "CN": "Kiina",
-                
-            };
-            return countryNames[countryCode] || countryCode; 
-        }
+      function getCountryName(countryCode) {
+          const countryNames = {
+              "FI": "Suomi",
+              "SE": "Ruotsi",
+              "NO": "Norja",
+              "DE": "Saksa",
+              "FR": "Ranska",
+              "US": "Yhdysvallat",
+              "GB": "Iso-Britannia",
+              "JP": "Japani",
+              "CN": "Kiina",
+              // Lisää muita maita tarpeen mukaan
+          };
+          return countryNames[countryCode] || countryCode; // Palauttaa koodin jos ei löydy nimeä
+      }
 
-        function displayWeather(data, countryName) {
-            let teksti = `<div class='weatherItem'>
-                            <div class='imageContainer'>
-                                <img src='http://openweathermap.org/img/w/${data.weather[0].icon}.png' alt='sääkuva'>
-                            </div>
-                            <div class='weatherInfo'>
-                                <h5>Maa: ${countryName}</h5>
-                                <p>Kaupunki: ${data.name}</p>
-                                <p>Kuvaus: ${data.weather[0].description}</p>
-                                <p>Lämpötila: ${data.main.temp} &deg;C</p>
-                                <p>Tuulen nopeus: ${data.wind.speed} m/s</p>
-                            </div>
-                          </div>`;
-            document.getElementById("weatherContainer").innerHTML = teksti; // Tyhjennetään aiemmat tulokset
-        }
+      function displayWeather(data, countryName) {
+          let teksti = `<div class='weatherItem'>
+                          <div class='imageContainer'>
+                              <img src='http://openweathermap.org/img/w/${data.weather[0].icon}.png' alt='sääkuva'>
+                          </div>
+                          <div class='weatherInfo'>
+                              <h5>Maa: ${countryName}</h5>
+                              <p>Kaupunki: ${data.name}</p>
+                              <p>Kuvaus: ${data.weather[0].description}</p>
+                              <p>Lämpötila: ${data.main.temp} &deg;C</p>
+                              <p>Tuulen nopeus: ${data.wind.speed} m/s</p>
+                          </div>
+                        </div>`;
+          document.getElementById("weatherContainer").innerHTML = teksti; // Tyhjennetään aiemmat tulokset
+      }
 
-        function fetchImage(cityName) {
-            // Haetaan kuva Unsplashista
-            const url = `https://api.unsplash.com/search/photos?query=${cityName}&client_id=${unsplashAccessKey}`;
+      function fetchImage(cityName) {
+          // Haetaan kuva Unsplashista
+          const url = `https://api.unsplash.com/search/photos?query=${cityName}&client_id=${unsplashAccessKey}`;
 
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Kuvaa ei löytynyt.');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const imageUrl = data.results.length > 0 ? data.results[0].urls.regular : 'https://via.placeholder.com/300x200?text=Kuva+ei+loydy';
-                    document.querySelector('.imageContainer img').src = imageUrl; // Päivitetään kuva
-                })
-                .catch(error => {
-                    console.error(error);
-                });
-        }
-    </script>
-        </section>
-        
-        
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - Jani Rehnman</div></div>
+          fetch(url)
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('Kuvaa ei löytynyt.');
+                  }
+                  return response.json();
+              })
+              .then(data => {
+                  const imageUrl = data.results.length > 0 ? data.results[0].urls.regular : 'https://via.placeholder.com/300x200?text=Kuva+ei+loydy';
+                  document.querySelector('.imageContainer img').src = imageUrl; // Päivitetään kuva
+              })
+              .catch(error => {
+                  console.error(error);
+              });
+      }
+  </script>
 
-           
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Jani Rehnman</span></strong>. All Rights Reserved
+      </div>
+      
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
